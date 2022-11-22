@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* RESET CSS */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* CONTEUDO */
+.content{
+    width: 100vw;
+    font-family: Poppins;
+}
+
+/* HEADER */
+.header{
+    background-color: #042940;
+    width: 100vw;
+    height: 15vh;
+}
+
+.header img{
+  margin-left: 1.5vw;
+}
+
+/* FORM */
+.form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(232, 232, 232);
+  height: 100vh;
+}
+
+.email, .avaliacao, .avaliacao-estrela, .submit{
+  margin-top: 5vh;
+}
+
+#email{
+  width: 15vw;
+  height: 4vh;
+}
+
+.avaliacao section{
+  display: inline-block;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+
+.avaliacao label > input{
+  display: none;
+}
+
+.avaliacao-estrela label > input{
+  display: none;
+}
+
+.avaliacao-estrela label > input + img{
+  cursor: pointer;
+}
+
+#submit{
+  background-color: #042940;
+  color: rgba(255, 255, 255, 0.863);
+  font-family: Poppins;
+  font-size: medium;
+  padding: 0.7em;
+  width: 15vw;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

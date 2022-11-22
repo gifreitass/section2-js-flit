@@ -17,7 +17,6 @@ function defaultColor (e) {
 // LOG NO CONSOLE COM VALOR ATUALIZADO DOS CAMPOS/ SALVAR NO LOCALSTORAGE E RECUPERAR
 for (let i = 0; i < focusElement.length; i++){
     focusElement[i].addEventListener('change', change)
-    focusElement[i].addEventListener('submit', getValues)
 }
 
 function change(e){
@@ -25,9 +24,12 @@ function change(e){
     console.log(e.target.value)
 }
 
-function getValues(e){
-    input.value = window.localStorage.getItem(e.target.name)
-    e.preventDefault()
+window.addEventListener('load', getValues)
+
+function getValues(){
+    for (let i = 0; i < focusElement.length; i++){
+    focusElement[i].value = window.localStorage.getItem(focusElement[i].name)
+}
 }
 
 // LOG NO CONSOLE ANTES DO ENVIO
