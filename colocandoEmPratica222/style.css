@@ -35,7 +35,6 @@ html {
 .header{
     background-color: #042940;
     width: 100vw;
-    height: 15vh;
 }
 
 .header img{
@@ -66,15 +65,11 @@ html {
   margin-left: 1vw;
 }
 
-.avaliacao label > input{
+.avaliacao label > input, .avaliacao-estrela label > input{
   display: none;
 }
 
-.avaliacao-estrela label > input{
-  display: none;
-}
-
-.avaliacao-estrela label > input + img{
+.avaliacao label > input + img, .avaliacao-estrela label > input + img{
   cursor: pointer;
 }
 
