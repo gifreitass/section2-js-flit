@@ -1,0 +1,41 @@
+/* TRÊS CAMPOS POR LINHA */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100vw;
+}
+
+.cadastro {
+    width: 100vw;
+    height: 7vh;
+    font-size: large;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 800px) {
+    .nome, .endereco, .diasFuncionamento, .horarioAbertura, .horarioFechamento, .submit {
+        width: 30vw;
+        margin-top: 3vw;
+    }
+}
+
+/* DOIS CAMPOS POR LINHA */
+@media (400px < width < 799px) {
+    .nome, .endereco, .diasFuncionamento, .horarioAbertura, .horarioFechamento, .submit {
+        width: 40vw;
+        margin-top: 4vw;
+    }
+}
+
+/* UM CAMPO POR LINHA */
+@media (max-width: 400px) {
+    .nome, .endereco, .diasFuncionamento, .horarioAbertura, .horarioFechamento, .submit {
+        width: 90vw;
+        margin-top: 4vw;
+    }
+}
